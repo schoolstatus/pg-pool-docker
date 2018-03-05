@@ -7,14 +7,16 @@ Based on https://github.com/akrmhrjn/pgpool-docker
 ├── Dockerfile                   # from PG 9.6, downloads and compiles pgpool with memcached support
 ├── README.md
 ├── pgpool.conf.sample           # sample config file
+│
 ├── scripts
 │   ├── docker_build.rb          # helper script for building image
 │   └── docker_tag_and_push.rb   # helper script for uploading to AWS ECS
+│
 └── start_pool.sh                # image entrypoint
 ``` 
 
 ### Setup
-Copy `pgpool.conf.sample` to `pgpool.conf`.  In here you'll configured your database server as well
+Copy `pgpool.conf.sample` to `pgpool.conf`.  In here you'll configure your database server as well
 as your memcached instance, cache settings, and cache whitelist/blacklist.
 
 ### How to Use
